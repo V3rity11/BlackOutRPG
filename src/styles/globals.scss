@@ -10,10 +10,10 @@ $secondary: #6c757d;
 	$player-container-background-color: #cecece;
 
 	@if $dark-theme {
-		$background-color: #111111;
+		$background-color: #000000;
 		$text-color: #ffffff;
 		$skill-container-outline-color: #ffffff;
-		$player-container-background-color: #252525;
+		$player-container-background-color: #000000;
 	}
 
 	background-color: $background-color;
