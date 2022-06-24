@@ -298,7 +298,7 @@ function PlayerAttributeField(props: PlayerAttributeFieldProps) {
 					{props.playerAttribute.Attribute.rollable && (
 						<Col xs='auto' style={{ paddingLeft: 0 }}>
 							<Image
-								src='/dice20.webp'
+								src='/dice10.webp'
 								alt='Dado'
 								className='attribute-dice clickable'
 								onClick={(ev) => diceClick(ev.ctrlKey)}
