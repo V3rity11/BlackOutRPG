@@ -139,7 +139,7 @@ function PlayerCharacteristicField(props: PlayerCharacteristicFieldProps) {
 	}
 
 	return (
-		<Col xs={6} md={3} xl={3} className='my-2'>
+		<Col xs={6} md={6} xl={6} className='my-2'>
 			<Row>
 				<Col className='mb-2'>
 					<Image
