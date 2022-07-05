@@ -1,13 +1,13 @@
 $primary: #8a0000;
 $secondary: #282829;
 @import 'bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
 
 @mixin theme-components($dark-theme) {
-	$background-color: #ffffff;
-	$text-color: #000000;
-	$skill-container-outline-color: #111111;
-	$player-container-background-color: #cecece;
+	$background-color: #000000;
+	$text-color: #ffffff;
+	$skill-container-outline-color: #ffffff;
+	$player-container-background-color: #000000;
 
 	@if $dark-theme {
 		$background-color: #000000;
@@ -145,8 +145,8 @@ $secondary: #282829;
 
 body {
 	padding: 0;
-	font-family: 'Cinzel', serif;
-
+	font-family: 'Play', sans-serif;
+	
 	&.dark {
 		@include theme-components($dark-theme: true);
 	}
@@ -168,7 +168,6 @@ body {
 	border-style: solid;
 	border-width: 1px;
 	border-color: gray;
-	border-radius: 20px;
 }
 
 .bottom-text {
