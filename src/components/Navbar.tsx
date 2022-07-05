@@ -61,6 +61,9 @@ export default function Navbar() {
 						)}
 					</Nav>
 					<Nav>
+						<Nav.Item className='me-3 align-self-center'>
+							<ThemeManager />
+						</Nav.Item>
 						{(onPlayerSheet || onAdminPanel) && (
 							<Nav.Link
 								href='#'
