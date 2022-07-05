@@ -1,13 +1,13 @@
-$primary: #8a0000;
-$secondary: #282829;
+$primary: #1a3e47;
+$secondary: #1a3e47;
 @import 'bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
 
 @mixin theme-components($dark-theme) {
-	$background-color: #000000;
+	$background-color: #275d6b;
 	$text-color: #ffffff;
 	$skill-container-outline-color: #ffffff;
-	$player-container-background-color: #000000;
+	$player-container-background-color: #1a3e47;
 
 	@if $dark-theme {
 		$background-color: #000000;
