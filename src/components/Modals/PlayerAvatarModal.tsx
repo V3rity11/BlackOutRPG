@@ -85,7 +85,7 @@ export default function PlayerAvatarModal(props: PlayerAvatarModalProps) {
 				<Row className='mb-3 h4 text-center'>
 					<Col>
 						Caso vá usar a extensão do OBS, é recomendado que as imagens estejam no
-						tamanho de <b>420x600</b> (ou no aspecto de 7:10) e em formato <b>PNG</b>.
+						tamanho de <b>600x600</b> (ou no aspecto de 7:10) e em formato <b>PNG</b>.
 					</Col>
 				</Row>
 				{avatars.map((avatar) => (
