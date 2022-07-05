@@ -4,10 +4,10 @@ $secondary: #1a3e47;
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
 
 @mixin theme-components($dark-theme) {
-	$background-color: #275d6b;
+	$background-color: #000000;
 	$text-color: #ffffff;
 	$skill-container-outline-color: #ffffff;
-	$player-container-background-color: #1a3e47;
+	$player-container-background-color: #000000;
 
 	@if $dark-theme {
 		$background-color: #000000;
