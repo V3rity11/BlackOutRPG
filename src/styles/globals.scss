@@ -1,7 +1,7 @@
 $primary: #1a3e47;
 $secondary: #1a3e47;
 @import 'bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 @mixin theme-components($dark-theme) {
 	$background-color: #000000;
@@ -145,7 +145,7 @@ $secondary: #1a3e47;
 
 body {
 	padding: 0;
-	font-family: 'Play', sans-serif;
+	font-family: 'Special Elite', cursive;
 	
 	&.dark {
 		@include theme-components($dark-theme: true);
