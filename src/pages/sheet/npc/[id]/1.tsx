@@ -115,7 +115,7 @@ function PlayerSheet(props: PageProps) {
 						</Row>
 						<hr />
 						<Row className='mb-3'>
-							<DataContainer outline title='Características'>
+							<DataContainer outline title='Atributos'>
 								<PlayerCharacteristicContainer
 									playerCharacteristics={chars}
 									characteristicDiceConfig={
@@ -126,20 +126,20 @@ function PlayerSheet(props: PageProps) {
 							</DataContainer>
 						</Row>
 						<Row className='mb-3'>
-							<PlayerEquipmentContainer
-								title='Combate'
-								availableEquipments={props.availableEquipments}
-								playerEquipments={props.player.PlayerEquipment}
-								npcId={props.player.id}
-							/>
-						</Row>
-						<Row className='mb-3'>
 							<PlayerSkillContainer
 								title='Perícias'
 								playerSkills={skills}
 								availableSkills={props.availableSkills}
 								skillDiceConfig={props.diceConfig.skill || props.diceConfig.base}
 								automaticMarking={props.automaticMarking}
+								npcId={props.player.id}
+							/>
+						</Row>
+						<Row className='mb-3'>
+							<PlayerEquipmentContainer
+								title='Combate'
+								availableEquipments={props.availableEquipments}
+								playerEquipments={props.player.PlayerEquipment}
 								npcId={props.player.id}
 							/>
 						</Row>
@@ -155,7 +155,7 @@ function PlayerSheet(props: PageProps) {
 						</Row>
 						<Row className='mb-3'>
 							<PlayerSpellContainer
-								title='Hacks'
+								title='Poderes'
 								playerSpells={props.player.PlayerSpell.map((sp) => sp.Spell)}
 								availableSpells={props.availableSpells}
 								playerMaxSlots={props.player.spellSlots}
