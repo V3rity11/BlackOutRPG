@@ -112,7 +112,7 @@ function PlayerSheet(props: PageProps) {
 						</Row>
 						<hr />
 						<Row className='mb-3'>
-							<DataContainer outline title='Características'>
+							<DataContainer outline title='Atributos'>
 								<PlayerCharacteristicContainer
 									playerCharacteristics={chars}
 									characteristicDiceConfig={
@@ -122,20 +122,20 @@ function PlayerSheet(props: PageProps) {
 							</DataContainer>
 						</Row>
 						<Row className='mb-3'>
-							<PlayerEquipmentContainer
-								title='Combate'
-								availableEquipments={props.availableEquipments}
-								playerEquipments={props.player.PlayerEquipment}
-								partners={props.partners}
-							/>
-						</Row>
-						<Row className='mb-3'>
 							<PlayerSkillContainer
 								title='Perícias'
 								playerSkills={skills}
 								availableSkills={props.availableSkills}
 								skillDiceConfig={props.diceConfig.skill || props.diceConfig.base}
 								automaticMarking={props.automaticMarking}
+							/>
+						</Row>
+						<Row className='mb-3'>
+							<PlayerEquipmentContainer
+								title='Combate'
+								availableEquipments={props.availableEquipments}
+								playerEquipments={props.player.PlayerEquipment}
+								partners={props.partners}
 							/>
 						</Row>
 						<Row className='mb-3'>
